@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRADELY | Leaderboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+    <div class="brand">✦ GRADELY<span>.</span></div>
+    <p class="nav-title">MAIN MENU</p>
+
+    <a href="index.html" class="nav-item">◫ Dashboard</a>
+    <a href="students.html" class="nav-item">♙ Students</a>
+    <a href="add-student.html" class="nav-item">＋ Add Student</a>
+    <a href="analytics.html" class="nav-item">▥ Analytics</a>
+    <a href="leaderboard.html" class="nav-item active">♛ Leaderboard</a>
+
+    <div class="sidebar-bottom">
+        <div class="profile">
+            <div class="avatar">A</div>
+            <div><b>Administrator</b><small>Academic Manager</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main-content">
+
+    <header class="topbar">
+        <div>
+            <span class="eyebrow">ACHIEVEMENTS / RANKINGS</span>
+            <h1>Leaderboard 🏆</h1>
+            <p class="subtext">Celebrating the brightest academic performers.</p>
+        </div>
+    </header>
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">NUMBER ONE</span>
+            <h2>Class Champion</h2>
+        </div>
+    </div>
+
+    <div class="topper-card">
+        <div class="trophy">🏆</div>
+        <div>
+            <span class="winner-label">TOP PERFORMER</span>
+            <h2 id="topper">No records yet</h2>
+            <p id="topperMarks">Add students to see rankings.</p>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">ACADEMIC EXCELLENCE</span>
+            <h2>Top 10 Students</h2>
+        </div>
+    </div>
+
+    <div class="panel table-panel">
+
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>RANK</th>
+                        <th>STUDENT NAME</th>
+                        <th>ROLL NO.</th>
+                        <th>TOTAL MARKS</th>
+                        <th>PERCENTAGE</th>
+                        <th>GRADE</th>
+                    </tr>
+                </thead>
+
+                <tbody id="leaderboardTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <span>✦ GRADELY</span>
+        <p>Celebrate every achievement.</p>
+    </footer>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

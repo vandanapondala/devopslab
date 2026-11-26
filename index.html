@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRADELY | Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+    <div class="brand">✦ GRADELY<span>.</span></div>
+    <p class="nav-title">MAIN MENU</p>
+
+    <a href="index.html" class="nav-item active">◫ Dashboard</a>
+    <a href="students.html" class="nav-item">♙ Students</a>
+    <a href="add-student.html" class="nav-item">＋ Add Student</a>
+    <a href="analytics.html" class="nav-item">▥ Analytics</a>
+    <a href="leaderboard.html" class="nav-item">♛ Leaderboard</a>
+
+    <div class="sidebar-bottom">
+        <div class="profile">
+            <div class="avatar">A</div>
+            <div>
+                <b>Administrator</b>
+                <small>Academic Manager</small>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<main class="main-content">
+
+    <header class="topbar">
+        <div>
+            <span class="eyebrow">ACADEMIC OVERVIEW / 2026</span>
+            <h1>Dashboard ✦</h1>
+            <p class="subtext">Welcome back, Admin! Let's explore student performance.</p>
+        </div>
+        <span class="live">● LIVE DASHBOARD</span>
+    </header>
+
+    <div class="welcome">
+        <div>
+            <span class="welcome-tag">✦ YOUR ACADEMIC SPACE</span>
+            <h2>Learning Today, Leading Tomorrow!</h2>
+            <p>Track progress and celebrate student success.</p>
+            <a href="add-student.html" class="primary-btn">＋ Add Student</a>
+        </div>
+        <div class="welcome-art">🎓</div>
+    </div>
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">AT A GLANCE</span>
+            <h2>Performance Overview</h2>
+        </div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card purple">
+            <div class="stat-top">
+                Total Students <span class="stat-icon">♙</span>
+            </div>
+            <h2 id="totalStudents">0</h2>
+            <small>Registered students</small>
+        </div>
+
+        <div class="stat-card blue">
+            <div class="stat-top">
+                Class Average <span class="stat-icon">◈</span>
+            </div>
+            <h2 id="classAverage">0%</h2>
+            <small>Overall performance</small>
+        </div>
+
+        <div class="stat-card green">
+            <div class="stat-top">
+                Students Passed <span class="stat-icon">✓</span>
+            </div>
+            <h2 id="passStudents">0</h2>
+            <small>Successful students</small>
+        </div>
+
+        <div class="stat-card orange">
+            <div class="stat-top">
+                Students Failed <span class="stat-icon">!</span>
+            </div>
+            <h2 id="failStudents">0</h2>
+            <small>Need improvement</small>
+        </div>
+    </div>
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">CLASS ACHIEVEMENT</span>
+            <h2>Class Topper 🏆</h2>
+        </div>
+    </div>
+
+    <div class="topper-card">
+        <div class="trophy">🏆</div>
+        <div>
+            <span class="winner-label">TOP PERFORMER</span>
+            <h2 id="topper">No records yet</h2>
+            <p id="topperMarks">Add students to discover the topper.</p>
+        </div>
+    </div>
+
+    <footer>
+        <span>✦ GRADELY</span>
+        <p>Designed for better learning & brighter futures.</p>
+    </footer>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

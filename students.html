@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRADELY | Students</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+    <div class="brand">✦ GRADELY<span>.</span></div>
+    <p class="nav-title">MAIN MENU</p>
+
+    <a href="index.html" class="nav-item">◫ Dashboard</a>
+    <a href="students.html" class="nav-item active">♙ Students</a>
+    <a href="add-student.html" class="nav-item">＋ Add Student</a>
+    <a href="analytics.html" class="nav-item">▥ Analytics</a>
+    <a href="leaderboard.html" class="nav-item">♛ Leaderboard</a>
+
+    <div class="sidebar-bottom">
+        <div class="profile">
+            <div class="avatar">A</div>
+            <div><b>Administrator</b><small>Academic Manager</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main-content">
+
+    <header class="topbar">
+        <div>
+            <span class="eyebrow">MANAGEMENT / RECORDS</span>
+            <h1>Students ♙</h1>
+            <p class="subtext">Manage and explore all student academic records.</p>
+        </div>
+        <span class="live">● STUDENT DATABASE</span>
+    </header>
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">YOUR CLASS</span>
+            <h2>Student Directory</h2>
+        </div>
+        <a href="add-student.html" class="primary-btn">＋ Add Student</a>
+    </div>
+
+    <div class="panel table-panel">
+
+        <input type="search" id="search" class="search"
+        placeholder="⌕ Search by name or roll number...">
+
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STUDENT</th>
+                        <th>ROLL NO.</th>
+                        <th>TOTAL</th>
+                        <th>AVERAGE</th>
+                        <th>GRADE</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <span>✦ GRADELY</span>
+        <p>Student Management System</p>
+    </footer>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

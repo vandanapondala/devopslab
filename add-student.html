@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRADELY | Add Student</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+    <div class="brand">✦ GRADELY<span>.</span></div>
+    <p class="nav-title">MAIN MENU</p>
+
+    <a href="index.html" class="nav-item">◫ Dashboard</a>
+    <a href="students.html" class="nav-item">♙ Students</a>
+    <a href="add-student.html" class="nav-item active">＋ Add Student</a>
+    <a href="analytics.html" class="nav-item">▥ Analytics</a>
+    <a href="leaderboard.html" class="nav-item">♛ Leaderboard</a>
+
+    <div class="sidebar-bottom">
+        <div class="profile">
+            <div class="avatar">A</div>
+            <div><b>Administrator</b><small>Academic Manager</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main-content">
+
+    <header class="topbar">
+        <div>
+            <span class="eyebrow">MANAGEMENT / REGISTRATION</span>
+            <h1>Add Student ✨</h1>
+            <p class="subtext">Enter student details and academic marks.</p>
+        </div>
+    </header>
+
+    <div class="panel form-panel">
+
+        <form id="studentForm">
+
+            <div class="section-heading">
+                <h2>Student Information</h2>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label>Student Name</label>
+                    <input type="text" id="name"
+                    placeholder="Enter full name" required>
+                </div>
+
+                <div class="field">
+                    <label>Roll Number</label>
+                    <input type="text" id="roll"
+                    placeholder="Enter roll number" required>
+                </div>
+
+            </div>
+
+            <h3 class="marks-title">
+                Subject Marks ✦
+                <span>Maximum 100 each</span>
+            </h3>
+
+            <div class="marks-grid">
+
+                <div class="field">
+                    <label>📘 English</label>
+                    <input type="number" id="english"
+                    min="0" max="100" placeholder="0 - 100" required>
+                </div>
+
+                <div class="field">
+                    <label>📐 Mathematics</label>
+                    <input type="number" id="math"
+                    min="0" max="100" placeholder="0 - 100" required>
+                </div>
+
+                <div class="field">
+                    <label>🧪 Science</label>
+                    <input type="number" id="science"
+                    min="0" max="100" placeholder="0 - 100" required>
+                </div>
+
+                <div class="field">
+                    <label>💻 Computer</label>
+                    <input type="number" id="computer"
+                    min="0" max="100" placeholder="0 - 100" required>
+                </div>
+
+                <div class="field">
+                    <label>🌍 Social Science</label>
+                    <input type="number" id="social"
+                    min="0" max="100" placeholder="0 - 100" required>
+                </div>
+
+            </div>
+
+            <button type="submit" class="primary-btn">
+                ＋ Save Student
+            </button>
+
+            <a href="students.html" class="primary-btn">
+                View Records →
+            </a>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <span>✦ GRADELY</span>
+        <p>Make every mark count.</p>
+    </footer>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
